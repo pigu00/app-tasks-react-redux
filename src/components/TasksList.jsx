@@ -17,7 +17,7 @@ export const TasksList = () => {
         <div className="w-4/6">
             <header className="flex justify-between items-center py-5">
                 <h1 className="text-2xl flex justify-center">Tasks {tasks.length}</h1>
-                <Link to='/create-task' className="bg-indigo-600 py-3 px-4 rounded text-white">Add Task</Link>
+                <Link to='/create-task' className="bg-pink-600 py-3 px-4 rounded text-white">Add Task</Link>
             </header>
 
 
@@ -27,10 +27,8 @@ export const TasksList = () => {
                 <div className='bg-neutral-800 p-4 rounded p-4 rounded-md'> 
                 <header className="flex justify-between">
                 <h2 key={task.id}>{task.title}</h2>
-                    <div className="flex gap-x-2"> 
-
-                        
-                        <Link to={`/edit-task/${task.id}`} className="bg-indigo-500 py-1 px-2 rounded text-sm">Edit</Link>
+                    <div className="flex gap-x-2 "> 
+                        <Link to={`/edit-task/${task.id}`} className="bg-sky-500 py-1 px-2 rounded text-sm">Edit</Link>
                         <button onClick={ ()=> handleDelete(task.id)} className="bg-red-500 py-1 px-2 rounded text-sm">Delete</button>
 
                     </div>

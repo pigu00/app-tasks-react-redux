@@ -7,11 +7,9 @@ import { TasksList } from './components/TasksList'
 function App() {
 
   return (
-    
-      <div className='bg-zinc-900 h-screen text-white'>
-    <div className='flex items-center justify-center h-full'>
 
-
+    <div className='bg-zinc-900 h-screen text-white'>
+      <div className='flex items-center justify-center h-full'>
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<TasksList />} />
@@ -20,9 +18,9 @@ function App() {
           </Routes>
         </BrowserRouter>
 
-        </div>
       </div>
-  
+    </div>
+
   )
 }
 
